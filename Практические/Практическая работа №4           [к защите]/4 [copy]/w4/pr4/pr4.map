@@ -1,0 +1,94 @@
+HI-TECH Software 8051-C Compiler V9.60
+
+Linker command line:
+
+--edf=C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\dat\en_msgs.txt -h+Z:\pr4.sym -z \
+  -Q8051AH -ol.obj -MZ:\pr4.map -E1 -ver=8051-C#V9.60 -ACODE=00h-0FFFh \
+  -pvectors=00h -prbit=0/20h,rbss,rdata/CODE,irdata/CODE,idata/rbss \
+  -pbss=XDATA/idata -pdata=CODE+100h -pconst=CODE+100h -pstrings=CODE+100h \
+  -pnvram=bss,heap C:\Temp\s4oo.obj Z:\main_0.obj \
+  C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\lib\51--nsc.lib 
+
+Object code version is 3.8
+
+Machine type is 8051AH
+
+Call graph:
+
+*start1 size 0,0 offset 0
+*    _main size 0,0 offset 0
+         _init size 0,0 offset 0
+*        _delayms size 0,2 offset 0
+
+		Name          Link     Load   Length Selector Space Scale
+C:\Temp\s4oo.obj
+		vectors          0        0        3       0     0
+		text            E4       E4       10       0     0
+Z:\main_0.obj   data           100      100        C     100     0
+		text             3        3       C3       0     0
+
+C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\lib\51--nsc.lib
+powerup.obj     text            F4       F4        3       0     0
+mul.obj         text            C6       C6       1E       0     0
+
+COMMON          rbss            20       20        2      20     1
+
+TOTAL		Name          Link     Load   Length
+	CLASS	CODE     
+		vectors          0        0        3
+		data           100      100        C
+		text            E4       E4       10
+		text             3        3       C3
+		text            F4       F4        3
+		text            C6       C6       1E
+
+	CLASS	DATA     
+		rbss            20       20        2
+
+	CLASS	XDATA    
+
+	CLASS	BITSEG   
+
+
+
+SEGMENTS	Name		Load	Length	 Top	Selector    Space Class
+
+		vectors         000000	0000F7	0000F7	       0       0  CODE    
+		rbit            000020	000002	000022	      20       1  BITSEG  
+		data            000100	00000C	00010C	     100       0  CODE    
+
+
+UNUSED ADDRESS RANGES
+
+	CODE             0F7-0FF
+	                 10C-FFF
+
+                                  Symbol Table
+
+?a_delayms     rbss    020  __Bbss         bss     022
+__Bidata       idata   022  __Birdata      irdata  003
+__Brbit        rbit    020  __Brdata       rdata   003
+__Hbss         bss     022  __Hcode        code    022
+__Hconst       const   100  __Hdata        data    10C
+__Hheap        heap    022  __Hidata       idata   022
+__Hirdata      irdata  022  __Hnvram       nvram   022
+__Hrbit        rbit    000  __Hrbss        rbss    022
+__Hrdata       rdata   022  __Hstrings     strings 100
+__Htext        text    022  __Hvectors     vectors 003
+__Lbss         bss     022  __Lcode        code    022
+__Lconst       const   100  __Ldata        data    100
+__Lheap        heap    022  __Lidata       idata   022
+__Lirdata      irdata  022  __Lnvram       nvram   022
+__Lrbit        rbit    000  __Lrbss        rbss    020
+__Lrdata       rdata   022  __Lstrings     strings 100
+__Ltext        text    022  __Lvectors     vectors 000
+__S0           (abs)   10C  _delayms       text    079
+_dur1          data    100  _dur2          data    102
+_dur3          data    104  _dur4          data    106
+_dur5          data    108  _dur6          data    10A
+_exit          text    0F1  _init          text    065
+_main          text    003  awmul          text    0C6
+intlevel0      (abs)   000  intlevel1      (abs)   000
+lwmul          text    0C6  powerup        text    0F4
+small_model    (abs)   001  stack_internal (abs)   001
+start          vectors 000  start1         text    0E4

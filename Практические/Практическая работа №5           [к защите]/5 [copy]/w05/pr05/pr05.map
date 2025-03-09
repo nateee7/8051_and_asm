@@ -1,0 +1,97 @@
+HI-TECH Software 8051-C Compiler V9.60
+
+Linker command line:
+
+--edf=C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\dat\en_msgs.txt -h+Z:\pr05.sym -z \
+  -Q8051AH -ol.obj -MZ:\pr05.map -E1 -ver=8051-C#V9.60 -ACODE=00h-0FFFh \
+  -pvectors=00h -prbit=0/20h,rbss,rdata/CODE,irdata/CODE,idata/rbss \
+  -pbss=XDATA/idata -pdata=CODE+100h -pconst=CODE+100h -pstrings=CODE+100h \
+  -pnvram=bss,heap C:\Temp\scps.obj Z:\main_0.obj \
+  C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\lib\51--nsc.lib 
+
+Object code version is 3.8
+
+Machine type is 8051AH
+
+Call graph:
+
+*start1 size 0,0 offset 0
+*    _main size 0,0 offset 0
+         _init size 0,0 offset 0
+             _disp_execute size 0,0 offset 1
+             _disp_write size 0,1 offset 0
+                 _disp_clear size 0,0 offset 1
+                 _disp_execute size 0,0 offset 1
+             _disp_clear size 0,0 offset 1
+*        _read size 0,5 offset 0
+         _disp_write size 0,1 offset 0
+             _disp_clear size 0,0 offset 1
+             _disp_execute size 0,0 offset 1
+
+		Name          Link     Load   Length Selector Space Scale
+C:\Temp\scps.obj
+		vectors          0        0        3       0     0
+		text           392      392       14       0     0
+Z:\main_0.obj   rbss            20       20        7      20     1
+		text             3        3      38F       0     0
+
+C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\lib\51--nsc.lib
+powerup.obj     text           3A6      3A6        3       0     0
+
+COMMON          rbss            27       27        5      20     1
+
+TOTAL		Name          Link     Load   Length
+	CLASS	CODE     
+		vectors          0        0        3
+		text           392      392       14
+		text             3        3      38F
+		text           3A6      3A6        3
+
+	CLASS	DATA     
+		rbss            20       20        C
+
+	CLASS	XDATA    
+
+	CLASS	BITSEG   
+
+
+
+SEGMENTS	Name		Load	Length	 Top	Selector    Space Class
+
+		vectors         000000	0003A9	0003A9	       0       0  CODE    
+		rbit            000020	00000C	00002C	      20       1  BITSEG  
+
+
+UNUSED ADDRESS RANGES
+
+	CODE             3A9-FFF
+
+                                  Symbol Table
+
+?a_disp_write  rbss    027  ?a_read        rbss    027
+__Bbss         bss     02C  __Bidata       idata   02C
+__Birdata      irdata  003  __Brbit        rbit    020
+__Brdata       rdata   003  __Hbss         bss     02C
+__Hcode        code    02C  __Hconst       const   100
+__Hdata        data    100  __Hheap        heap    02C
+__Hidata       idata   02C  __Hirdata      irdata  02C
+__Hnvram       nvram   02C  __Hrbit        rbit    000
+__Hrbss        rbss    02C  __Hrdata       rdata   02C
+__Hstrings     strings 100  __Htext        text    02C
+__Hvectors     vectors 003  __Lbss         bss     02C
+__Lcode        code    02C  __Lconst       const   100
+__Ldata        data    100  __Lheap        heap    02C
+__Lidata       idata   02C  __Lirdata      irdata  02C
+__Lnvram       nvram   02C  __Lrbit        rbit    000
+__Lrbss        rbss    020  __Lrdata       rdata   02C
+__Lstrings     strings 100  __Ltext        text    02C
+__Lvectors     vectors 000  __S0           (abs)   3A9
+_disp_clear    text    373  _disp_cnt      rbss    021
+_disp_execute  text    383  _disp_length   rbss    023
+_disp_write    text    32C  _exit          text    3A3
+_i             rbss    025  _init          text    05D
+_last_symb     rbss    020  _main          text    003
+_read          text    0C1  intlevel0      (abs)   000
+intlevel1      (abs)   000  powerup        text    3A6
+small_model    (abs)   001  stack_internal (abs)   001
+start          vectors 000  start1         text    392

@@ -1,0 +1,126 @@
+__Lrdata 31 FFFFFFD2 DATA
+_message 25 0 DATA
+__Hrbss 31 0 DATA
+__Lrbss 20 0 DATA
+?a_send_ascii_word 27 0 DATA
+?a_send_ascii 2F 0 DATA
+__Birdata 3 FFFFFFD2 DATA
+__Hirdata 31 FFFFFFD2 DATA
+_N 21 0 DATA
+__Lirdata 31 FFFFFFD2 DATA
+_i 23 0 DATA
+powerup B6 0 CODE
+__Htext 31 0
+__Ltext 31 0
+__Hcode 31 0
+__Lcode 31 0
+ldb_r0 12 0 CODE
+ldc_r0 E 0 CODE
+__Hdata 100 0 CODE
+__Hconst 100 0 CODE
+__Ldata 100 0 CODE
+__Lconst 100 0 CODE
+__Bbss 31 0 XDATA
+ldb_r1 1F 0 CODE
+ldc_r1 1B 0 CODE
+__Hbss 31 0 XDATA
+__Hstrings 105 0 CODE
+ldb_r2 2C 0 CODE
+ldc_r2 28 0 CODE
+__Lbss 31 0 XDATA
+__Lstrings 100 0 CODE
+ldb_r3 39 0 CODE
+ldc_r3 35 0 CODE
+ldb_r4 46 0 CODE
+ldc_r4 42 0 CODE
+ldb_r5 53 0 CODE
+ldc_r5 4F 0 CODE
+__S0 28F 0
+ldb_r6 60 0 CODE
+ldc_r6 5C 0 CODE
+ldb_r7 6D 0 CODE
+ldc_r7 69 0 CODE
+start1 A2 0 CODE
+?a_send 30 0 DATA
+__Hnvram 31 0 XDATA
+small_model 1 0
+__Lnvram 31 0 XDATA
+_send 1C5 0 CODE
+ldc_byte 3 0 CODE
+_send_ascii_word 1D9 0 CODE
+__Hheap 31 0 XDATA
+__Lheap 31 0 XDATA
+_main 105 0 CODE
+_init 11C 0 CODE
+_exit B3 0 CODE
+_send_ascii 14D 0 CODE
+start 0 0 CODE
+intlevel0 0 0
+_cnt 20 0 DATA
+_strlen 76 0 CODE
+__Brbit 20 20 BITSEG
+__Hrbit 0 20 BITSEG
+intlevel1 0 0
+__Hvectors 3 0 CODE
+__Lrbit 0 20 BITSEG
+__Lvectors 0 0 CODE
+__Bidata 31 0 DATA
+__Hidata 31 0 DATA
+__Lidata 31 0 DATA
+stack_internal 1 0
+__Brdata 3 FFFFFFD2 DATA
+__Hrdata 31 FFFFFFD2 DATA
+%segments
+vectors 0 B8 CODE
+rbit 0 10 BITSEG
+data 100 28E CODE
+%locals
+Z:\main_0.obj
+D:\MS11ws\6\w06\pr06\main.c
+15 105 0 CODE
+16 107 0 CODE
+18 10A 0 CODE
+20 110 0 CODE
+19 117 0 CODE
+37 119 0 CODE
+39 11C 0 CODE
+40 11E 0 CODE
+48 121 0 CODE
+49 127 0 CODE
+51 129 0 CODE
+52 12B 0 CODE
+54 12D 0 CODE
+57 130 0 CODE
+59 133 0 CODE
+60 136 0 CODE
+63 139 0 CODE
+64 13C 0 CODE
+66 13E 0 CODE
+67 141 0 CODE
+68 144 0 CODE
+69 147 0 CODE
+71 14A 0 CODE
+73 14D 0 CODE
+77 14F 0 CODE
+78 17B 0 CODE
+79 181 0 CODE
+81 187 0 CODE
+82 1B1 0 CODE
+83 1B7 0 CODE
+85 1BD 0 CODE
+86 1C2 0 CODE
+87 1C5 0 CODE
+88 1C7 0 CODE
+89 1C9 0 CODE
+90 1D4 0 CODE
+91 1D6 0 CODE
+92 1D9 0 CODE
+94 1DC 0 CODE
+95 1EB 0 CODE
+96 1F0 0 CODE
+99 1F5 0 CODE
+100 224 0 CODE
+101 22B 0 CODE
+102 23D 0 CODE
+100 26C 0 CODE
+104 28B 0 CODE
