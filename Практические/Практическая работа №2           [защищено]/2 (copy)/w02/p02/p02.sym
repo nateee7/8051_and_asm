@@ -1,0 +1,89 @@
+__Lrdata 24 FFFFFFDF DATA
+__Hrbss 24 0 DATA
+__Lrbss 20 0 DATA
+_changeValue 3 0 CODE
+__Birdata 3 FFFFFFDF DATA
+__Hirdata 24 FFFFFFDF DATA
+__Lirdata 24 FFFFFFDF DATA
+_i 22 0 DATA
+powerup ED 0 CODE
+__Htext 24 0
+__Ltext 24 0
+__Hcode 24 0
+__Lcode 24 0
+ldb_r0 89 0 CODE
+ldc_r0 85 0 CODE
+__Hdata 10D 0 CODE
+__Hconst 100 0 CODE
+__Ldata 100 0 CODE
+__Lconst 100 0 CODE
+__Bbss 24 0 XDATA
+ldb_r1 96 0 CODE
+ldc_r1 92 0 CODE
+__Hbss 24 0 XDATA
+__Hstrings 100 0 CODE
+ldb_r2 A3 0 CODE
+ldc_r2 9F 0 CODE
+__Lbss 24 0 XDATA
+__Lstrings 100 0 CODE
+ldb_r3 B0 0 CODE
+ldc_r3 AC 0 CODE
+ldb_r4 BD 0 CODE
+ldc_r4 B9 0 CODE
+ldb_r5 CA 0 CODE
+ldc_r5 C6 0 CODE
+__S0 121 0
+ldb_r6 D7 0 CODE
+ldc_r6 D3 0 CODE
+ldb_r7 E4 0 CODE
+ldc_r7 E0 0 CODE
+start1 10D 0 CODE
+__Hnvram 24 0 XDATA
+small_model 1 0
+__Lnvram 24 0 XDATA
+ldc_byte 7A 0 CODE
+__Hheap 24 0 XDATA
+__Lheap 24 0 XDATA
+_main 3A 0 CODE
+_exit 11E 0 CODE
+_curr 20 0 DATA
+start 0 0 CODE
+intlevel0 0 0
+_arr 100 0 CODE
+__Brbit 20 20 BITSEG
+__Hrbit 0 20 BITSEG
+intlevel1 0 0
+__Hvectors 3 0 CODE
+__Lrbit 0 20 BITSEG
+__Lvectors 0 0 CODE
+__Bidata 24 0 DATA
+__Hidata 24 0 DATA
+__Lidata 24 0 DATA
+stack_internal 1 0
+__Brdata 3 FFFFFFDF DATA
+__Hrdata 24 FFFFFFDF DATA
+%segments
+vectors 0 EF CODE
+rbit 0 3 BITSEG
+data 100 120 CODE
+%locals
+Z:\main_0.obj
+D:\MS11ws\2\w02\p02\main.c
+22 3 0 CODE
+23 5 0 CODE
+24 15 0 CODE
+25 1A 0 CODE
+26 2B 0 CODE
+27 2D 0 CODE
+28 2F 0 CODE
+29 37 0 CODE
+34 3A 0 CODE
+35 3C 0 CODE
+36 3F 0 CODE
+37 42 0 CODE
+38 47 0 CODE
+40 4C 0 CODE
+41 53 0 CODE
+42 56 0 CODE
+44 75 0 CODE
+45 77 0 CODE
