@@ -1,0 +1,96 @@
+HI-TECH Software 8051-C Compiler V9.60
+
+Linker command line:
+
+--edf=C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\dat\en_msgs.txt -h+Z:\pr05.sym -z \
+  -Q8051AH -ol.obj -MZ:\pr05.map -E1 -ver=8051-C#V9.60 -ACODE=00h-0FFFh \
+  -pvectors=00h -prbit=0/20h,rbss,rdata/CODE,irdata/CODE,idata/rbss \
+  -pbss=XDATA/idata -pdata=CODE+100h -pconst=CODE+100h -pstrings=CODE+100h \
+  -pnvram=bss,heap C:\Temp\sifs.obj Z:\main_0.obj \
+  C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\lib\51--nsc.lib 
+
+Object code version is 3.8
+
+Machine type is 8051AH
+
+Call graph:
+
+*start1 size 0,0 offset 0
+*    _main size 0,0 offset 0
+         _init size 0,0 offset 0
+             _disp_execute size 0,0 offset 0
+             _disp_write size 0,1 offset 0
+                 _disp_clear size 0,0 offset 1
+             _disp_clear size 0,0 offset 1
+*        _read size 0,5 offset 0
+         _disp_write size 0,1 offset 0
+             _disp_clear size 0,0 offset 1
+
+		Name          Link     Load   Length Selector Space Scale
+C:\Temp\sifs.obj
+		vectors          0        0        3       0     0
+		text           3BF      3BF       14       0     0
+Z:\main_0.obj   rbss            20       20        A      20     1
+		text             3        3      3BC       0     0
+
+C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\lib\51--nsc.lib
+powerup.obj     text           3D3      3D3        3       0     0
+
+COMMON          rbss            2A       2A        5      20     1
+
+TOTAL		Name          Link     Load   Length
+	CLASS	CODE     
+		vectors          0        0        3
+		text           3BF      3BF       14
+		text             3        3      3BC
+		text           3D3      3D3        3
+
+	CLASS	DATA     
+		rbss            20       20        F
+
+	CLASS	XDATA    
+
+	CLASS	BITSEG   
+
+
+
+SEGMENTS	Name		Load	Length	 Top	Selector    Space Class
+
+		vectors         000000	0003D6	0003D6	       0       0  CODE    
+		rbit            000020	00000F	00002F	      20       1  BITSEG  
+
+
+UNUSED ADDRESS RANGES
+
+	CODE             3D6-FFF
+
+                                  Symbol Table
+
+?a_disp_write  rbss    02A  ?a_read        rbss    02A
+__Bbss         bss     02F  __Bidata       idata   02F
+__Birdata      irdata  003  __Brbit        rbit    020
+__Brdata       rdata   003  __Hbss         bss     02F
+__Hcode        code    02F  __Hconst       const   100
+__Hdata        data    100  __Hheap        heap    02F
+__Hidata       idata   02F  __Hirdata      irdata  02F
+__Hnvram       nvram   02F  __Hrbit        rbit    000
+__Hrbss        rbss    02F  __Hrdata       rdata   02F
+__Hstrings     strings 100  __Htext        text    02F
+__Hvectors     vectors 003  __Lbss         bss     02F
+__Lcode        code    02F  __Lconst       const   100
+__Ldata        data    100  __Lheap        heap    02F
+__Lidata       idata   02F  __Lirdata      irdata  02F
+__Lnvram       nvram   02F  __Lrbit        rbit    000
+__Lrbss        rbss    020  __Lrdata       rdata   02F
+__Lstrings     strings 100  __Ltext        text    02F
+__Lvectors     vectors 000  __S0           (abs)   3D6
+_curr_symb     rbss    020  _disp_clear    text    3A0
+_disp_cnt      rbss    022  _disp_execute  text    3B0
+_disp_length   rbss    024  _disp_write    text    35D
+_exit          text    3D0  _flag          rbss    026
+_i             rbss    028  _init          text    059
+_last_symb     rbss    021  _main          text    003
+_read          text    0C2  intlevel0      (abs)   000
+intlevel1      (abs)   000  powerup        text    3D3
+small_model    (abs)   001  stack_internal (abs)   001
+start          vectors 000  start1         text    3BF

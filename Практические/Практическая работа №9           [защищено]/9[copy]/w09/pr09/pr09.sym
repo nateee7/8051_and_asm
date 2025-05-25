@@ -1,0 +1,79 @@
+__Lrdata 22 FFFFFFE1 DATA
+__Hrbss 22 0 DATA
+__Lrbss 20 0 DATA
+__Birdata 3 FFFFFFE1 DATA
+__Hirdata 22 FFFFFFE1 DATA
+__Lirdata 22 FFFFFFE1 DATA
+powerup C8 0 CODE
+__Htext 22 0
+__Ltext 22 0
+_on_interr 3 0 CODE
+_shift_flag 20 0 DATA
+_on_INT0 9F 0 CODE
+__Hcode 22 0
+__Lcode 22 0
+__Hdata 100 0 CODE
+__Hconst 100 0 CODE
+__Ldata 100 0 CODE
+__Lconst 100 0 CODE
+__Bbss 22 0 XDATA
+__Hbss 22 0 XDATA
+__Hstrings 100 0 CODE
+__Lbss 22 0 XDATA
+__Lstrings 100 0 CODE
+__S0 100 0
+start1 B8 0 CODE
+__Hnvram 22 0 XDATA
+small_model 1 0
+__Lnvram 22 0 XDATA
+__Hheap 22 0 XDATA
+__Lheap 22 0 XDATA
+_main 60 0 CODE
+_init 80 0 CODE
+_exit C5 0 CODE
+start 0 0 CODE
+intlevel0 0 0
+__Brbit 20 20 BITSEG
+__Hrbit 0 20 BITSEG
+intlevel1 0 0
+__Hvectors 3 0 CODE
+__Lrbit 0 20 BITSEG
+__Lvectors 0 0 CODE
+__Bidata 22 0 DATA
+__Hidata 22 0 DATA
+__Lidata 22 0 DATA
+stack_internal 1 0
+__Brdata 3 FFFFFFE1 DATA
+__Hrdata 22 FFFFFFE1 DATA
+%segments
+vectors 0 CA CODE
+rbit 0 1 BITSEG
+%locals
+Z:\main_0.obj
+D:\MS11ws\9\w09\pr09\main.c
+20 3 0 CODE
+21 5 0 CODE
+22 C 0 CODE
+24 F 0 CODE
+25 11 0 CODE
+27 60 0 CODE
+33 62 0 CODE
+38 65 0 CODE
+39 67 0 CODE
+40 69 0 CODE
+41 72 0 CODE
+42 75 0 CODE
+37 7B 0 CODE
+49 7D 0 CODE
+51 80 0 CODE
+52 82 0 CODE
+53 8C 0 CODE
+55 91 0 CODE
+56 94 0 CODE
+57 96 0 CODE
+58 98 0 CODE
+59 9A 0 CODE
+61 9C 0 CODE
+63 9F 0 CODE
+64 A1 0 CODE
+65 B5 0 CODE

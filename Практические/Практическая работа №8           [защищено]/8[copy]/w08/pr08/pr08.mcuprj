@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MCUProject Schema="60" Class="CMCUProject" Path="" PathAbs="" ProjectType="0">
+<ProjectFolders/>
+<ProjectFiles>
+<FileItem>
+<MCUFile Class="CMCUFile" Path="&amp;ASCmain.c" PathAbs="&amp;ASCD:\MS11ws\8\w08\pr08\main.c" UseFileOptions="0" FileOptions=""/>
+</FileItem>
+</ProjectFiles>
+<BuildSettings>
+<MCUProjectBuildSettings Class="CMCUProjectBuildSettings" ToolGroupType="3" IntermediatePath="&amp;ASC.\" IntermediatePathAbs="&amp;ASCD:\MS11ws\8\w08\pr08\" OutputPath="&amp;ASC.\" OutputPathAbs="&amp;ASCD:\MS11ws\8\w08\pr08\" TargetFileType="6" SimPath="&amp;ASC.\" SimPathAbs="&amp;ASCD:\MS11ws\8\w08\pr08\" SimFile="&amp;ASCpr08.hex" CodeLoadType="0">
+<Compiler>
+<MCUToolSettings Class="CMCUToolSettings" ToolType="-1" IntermediatePath="&amp;ASC.\" IntermediatePathAbs="" OutputPath="&amp;ASC.\" OutputPathAbs="" TargetType="-1" IncludeOptions="" PreFilenameOptions="&amp;ASC--ASMLIST -G -M -N255 -P --OPT=none --CHIP=8051AH  --ERRFORMAT=&quot;error; file %f; line %l; column %c; %s&quot;  --WARNFORMAT=&quot;warning; file %f; line %l; column %c; %s&quot;  --MSGFORMAT=&quot;message; file %f; line %l; column %c; %s&quot; " PostFilenameOptions="">
+<MCULibraries/>
+</MCUToolSettings>
+</Compiler>
+<Library>
+<MCUToolSettings Class="CMCUToolSettings" ToolType="6" IntermediatePath="&amp;ASC.\" IntermediatePathAbs="" OutputPath="&amp;ASC.\" OutputPathAbs="" TargetType="7" IncludeOptions="" PreFilenameOptions="&amp;ASC r &quot;pr08.lib&quot;" PostFilenameOptions="">
+<MCULibraries/>
+</MCUToolSettings>
+</Library>
+</MCUProjectBuildSettings>
+</BuildSettings>
+</MCUProject>

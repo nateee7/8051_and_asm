@@ -1,0 +1,115 @@
+HI-TECH Software 8051-C Compiler V9.60
+
+Linker command line:
+
+--edf=C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\dat\en_msgs.txt -h+Z:\pr3.sym -z \
+  -Q8051AH -ol.obj -MZ:\pr3.map -E1 -ver=8051-C#V9.60 -ACODE=00h-0FFFh \
+  -pvectors=00h -prbit=0/20h,rbss,rdata/CODE,irdata/CODE,idata/rbss \
+  -pbss=XDATA/idata -pdata=CODE+100h -pconst=CODE+100h -pstrings=CODE+100h \
+  -pnvram=bss,heap C:\Temp\s3ss.obj Z:\main_0.obj \
+  C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\lib\51--nsc.lib 
+
+Object code version is 3.8
+
+Machine type is 8051AH
+
+Call graph:
+
+*start1 size 0,0 offset 0
+*    _main size 0,0 offset 0
+         _dispInit size 0,0 offset 0
+             _dispExecute size 0,0 offset 69
+*        _dispAnimate size 0,67 offset 0
+             _strlen size 0,0 offset 67
+             _strcpy size 0,0 offset 67
+             _dispExecute size 0,0 offset 69
+             _dispSetPos size 0,2 offset 67
+                 _dispExecute size 0,0 offset 69
+*            _dispWriteRu size 0,3 offset 67
+
+		Name          Link     Load   Length Selector Space Scale
+C:\Temp\s3ss.obj
+		vectors          0        0        3       0     0
+		text            C5       C5       14       0     0
+Z:\main_0.obj   rbss            20       20        D      20     1
+		strings        100      100       10     100     0
+		text           110      110      26B     100     0
+
+C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\lib\51--nsc.lib
+ldc_byte.obj    text             3        3       73       0     0
+powerup.obj     text            D9       D9        3       0     0
+strcpy.obj      text            A2       A2       23       0     0
+strlen.obj      text            76       76       2C       0     0
+
+COMMON          rbss            2D       2D       46      20     1
+
+TOTAL		Name          Link     Load   Length
+	CLASS	CODE     
+		vectors          0        0        3
+		text            C5       C5       14
+		strings        100      100       10
+		text           110      110      26B
+		text             3        3       73
+		text            D9       D9        3
+		text            A2       A2       23
+		text            76       76       2C
+
+	CLASS	DATA     
+		rbss            20       20       53
+
+	CLASS	XDATA    
+
+	CLASS	BITSEG   
+
+
+
+SEGMENTS	Name		Load	Length	 Top	Selector    Space Class
+
+		vectors         000000	0000DC	0000DC	       0       0  CODE    
+		rbit            000020	000053	000073	      20       1  BITSEG  
+		data            000100	00027B	00037B	     100       0  CODE    
+
+
+UNUSED ADDRESS RANGES
+
+	CODE             0DC-0FF
+	                 37B-FFF
+
+                                  Symbol Table
+
+?a_dispAnimate rbss    02D  ?a_dispSetPos  rbss    070
+?a_dispWriteRu rbss    070  __Bbss         bss     073
+__Bidata       idata   073  __Birdata      irdata  003
+__Brbit        rbit    020  __Brdata       rdata   003
+__Hbss         bss     073  __Hcode        code    073
+__Hconst       const   100  __Hdata        data    100
+__Hheap        heap    073  __Hidata       idata   073
+__Hirdata      irdata  073  __Hnvram       nvram   073
+__Hrbit        rbit    000  __Hrbss        rbss    073
+__Hrdata       rdata   073  __Hstrings     strings 110
+__Htext        text    073  __Hvectors     vectors 003
+__Lbss         bss     073  __Lcode        code    073
+__Lconst       const   100  __Ldata        data    100
+__Lheap        heap    073  __Lidata       idata   073
+__Lirdata      irdata  073  __Lnvram       nvram   073
+__Lrbit        rbit    000  __Lrbss        rbss    020
+__Lrdata       rdata   073  __Lstrings     strings 100
+__Ltext        text    073  __Lvectors     vectors 000
+__S0           (abs)   37B  _dispAnimate   text    1C3
+_dispComm      rbss    022  _dispExecute   text    156
+_dispInit      text    125  _dispSetPos    text    36A
+_dispWriteRu   text    165  _exit          text    0D6
+_i             rbss    020  _main          text    110
+_strcpy        text    0A2  _strlen        text    076
+intlevel0      (abs)   000  intlevel1      (abs)   000
+ldb_r0         text    012  ldb_r1         text    01F
+ldb_r2         text    02C  ldb_r3         text    039
+ldb_r4         text    046  ldb_r5         text    053
+ldb_r6         text    060  ldb_r7         text    06D
+ldc_byte       text    003  ldc_r0         text    00E
+ldc_r1         text    01B  ldc_r2         text    028
+ldc_r3         text    035  ldc_r4         text    042
+ldc_r5         text    04F  ldc_r6         text    05C
+ldc_r7         text    069  powerup        text    0D9
+small_model    (abs)   001  stack_internal (abs)   001
+start          vectors 000  start1         text    0C5

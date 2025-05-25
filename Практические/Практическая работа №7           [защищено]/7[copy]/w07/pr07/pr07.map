@@ -1,0 +1,111 @@
+HI-TECH Software 8051-C Compiler V9.60
+
+Linker command line:
+
+--edf=C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\dat\en_msgs.txt -h+Z:\pr07.sym -z \
+  -Q8052AH -ol.obj -MZ:\pr07.map -E1 -ver=8051-C#V9.60 -ACODE=00h-01FFFh \
+  -pvectors=00h -prbit=0/20h,rbss,rdata/CODE,irdata/CODE,idata/rbss \
+  -pbss=XDATA/idata -pdata=CODE+100h -pconst=CODE+100h -pstrings=CODE+100h \
+  -pnvram=bss,heap C:\Temp\shbs.obj Z:\main_0.obj \
+  C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\lib\51--nsc.lib 
+
+Object code version is 3.8
+
+Machine type is 8052AH
+
+Call graph:
+
+*start1 size 0,0 offset 0
+*    _main size 0,0 offset 0
+         _init size 0,0 offset 0
+             _write size 0,0 offset 0
+         _inc size 0,0 offset 0
+             _write_Q size 0,0 offset 0
+                 _write size 0,0 offset 0
+         _dec size 0,0 offset 0
+             _write_Q size 0,0 offset 0
+                 _write size 0,0 offset 0
+         _set_default size 0,0 offset 0
+             _write_Q size 0,0 offset 0
+                 _write size 0,0 offset 0
+         _set_50 size 0,0 offset 0
+             _write_Q size 0,0 offset 0
+                 _write size 0,0 offset 0
+*        _pulse size 0,4 offset 0
+
+		Name          Link     Load   Length Selector Space Scale
+C:\Temp\shbs.obj
+		vectors          0        0        3       0     0
+		text           2C6      2C6       14       0     0
+Z:\main_0.obj   rbss            20       20        C      20     1
+		text             3        3      1E5       0     0
+
+C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\lib\51--nsc.lib
+powerup.obj     text           2DA      2DA        3       0     0
+mul.obj         text           2A8      2A8       1E       0     0
+div.obj         text           1E8      1E8       C0       0     0
+
+COMMON          rbss            2C       2C        4      20     1
+
+TOTAL		Name          Link     Load   Length
+	CLASS	CODE     
+		vectors          0        0        3
+		text           2C6      2C6       14
+		text             3        3      1E5
+		text           2DA      2DA        3
+		text           2A8      2A8       1E
+		text           1E8      1E8       C0
+
+	CLASS	DATA     
+		rbss            20       20       10
+
+	CLASS	XDATA    
+
+	CLASS	BITSEG   
+
+
+
+SEGMENTS	Name		Load	Length	 Top	Selector    Space Class
+
+		vectors         000000	0002DD	0002DD	       0       0  CODE    
+		rbit            000020	000010	000030	      20       1  BITSEG  
+
+
+UNUSED ADDRESS RANGES
+
+	CODE             2DD-1FFF
+
+                                  Symbol Table
+
+?a_pulse       rbss    02C  _F             rbss    020
+_Q             rbss    022  _Qmax          rbss    024
+_Qmin          rbss    026  _T             rbss    028
+__Bbss         bss     030  __Bidata       idata   030
+__Birdata      irdata  003  __Brbit        rbit    020
+__Brdata       rdata   003  __Hbss         bss     030
+__Hcode        code    030  __Hconst       const   100
+__Hdata        data    100  __Hheap        heap    030
+__Hidata       idata   030  __Hirdata      irdata  030
+__Hnvram       nvram   030  __Hrbit        rbit    000
+__Hrbss        rbss    030  __Hrdata       rdata   030
+__Hstrings     strings 100  __Htext        text    030
+__Hvectors     vectors 003  __Lbss         bss     030
+__Lcode        code    030  __Lconst       const   100
+__Ldata        data    100  __Lheap        heap    030
+__Lidata       idata   030  __Lirdata      irdata  030
+__Lnvram       nvram   030  __Lrbit        rbit    000
+__Lrbss        rbss    020  __Lrdata       rdata   030
+__Lstrings     strings 100  __Ltext        text    030
+__Lvectors     vectors 000  __S0           (abs)   2DD
+_dec           text    184  _exit          text    2D7
+_flag          rbss    02A  _inc           text    151
+_init          text    095  _main          text    003
+_pulse         text    0FB  _set_50        text    143
+_set_default   text    135  _write         text    1B7
+_write_Q       text    1C6  awdiv          text    278
+awmod          text    270  awmul          text    2A8
+intlevel0      (abs)   000  intlevel1      (abs)   000
+lwdiv          text    23D  lwmod          text    249
+lwmul          text    2A8  powerup        text    2DA
+small_model    (abs)   001  stack_internal (abs)   001
+start          vectors 000  start1         text    2C6
