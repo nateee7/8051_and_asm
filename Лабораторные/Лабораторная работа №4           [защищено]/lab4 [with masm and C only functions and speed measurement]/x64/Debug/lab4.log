@@ -1,0 +1,8 @@
+﻿  Assembling asm_code.asm...
+asm_code.asm(40): warning A6004: procedure argument or local not referenced : inp
+asm_code.asm(51): warning A6004: procedure argument or local not referenced : inp
+  c_func.c
+C:\ms\Лабораторная работа №4           [к защите]\lab4\c_func.c(27): warning C4172: возвращение адреса локальной или временной переменной : res
+  lab4.cpp
+C:\ms\Лабораторная работа №4           [к защите]\lab4\c_func.c(27): warning C4172: возвращение адреса локальной или временной переменной : res
+  lab4.vcxproj -> C:\ms\Лабораторная работа №4           [к защите]\lab4\x64\Debug\lab4.exe
